@@ -1,15 +1,4 @@
-// Handle uncaught exceptions
-process.on('uncaughtException', (error) => {
-    console.error('Uncaught Exception:', error);
-    // Optionally perform cleanup tasks here
-  });
-  
-  // Handle unhandled promise rejections
-  process.on('unhandledRejection', (reason, promise) => {
-    console.error('Unhandled Rejection:', reason);
-    // Optionally perform cleanup tasks here
-  });
-  
+
   const qrcode = require('qrcode-terminal');
   const { Client, Location, List, Buttons, LocalAuth,MessageMedia} = require('whatsapp-web.js');
   const path = require('path');
